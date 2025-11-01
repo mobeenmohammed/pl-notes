@@ -1,0 +1,48 @@
+{
+  "thm": {
+    "prefix": "thm",
+    "body": [
+      "\\\\begin{theoremenv}{}",
+      "$0",
+      "\\\\end{theoremenv}"
+    ],
+    "description": "Theorem box (empty title)"
+  },
+  "pf": {
+    "prefix": "pf",
+    "body": [
+      "\\\\begin{proof}",
+      "$0",
+      "\\\\end{proof}"
+    ],
+    "description": "Proof box"
+  },
+  "aln": {
+    "prefix": "aln",
+    "body": [
+      "\\\\begin{align}",
+      "  $0",
+      "\\\\end{align}"
+    ],
+    "description": "align environment"
+  },
+  "inf": {
+    "prefix": "inf",
+    "body": [
+      "\\\\[",
+      "  \\\\inferrule*[Right=$1]{${2:\\\\types{\\\\Gamma}{e_1}{\\\\tau_1\\\\to\\\\tau_2} \\\\quad \\\\types{\\\\Gamma}{e_2}{\\\\tau_1}}]",
+      "                          {${3:\\\\types{\\\\Gamma}{e_1\\\\,e_2}{\\\\tau_2}}}",
+      "\\\\]"
+    ],
+    "description": "mathpartir inference rule"
+  },
+  "bnf": {
+    "prefix": "bnf",
+    "body": [
+      "\\\\begin{grammar}",
+      "<$1> ::= $2 \\\\alt $3",
+      "\\\\end{grammar}"
+    ],
+    "description": "BNF grammar skeleton"
+  }
+}

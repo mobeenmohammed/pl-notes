@@ -1,0 +1,21 @@
+% !TeX root = ../../main.tex
+\section{Operational Semantics (Small-step)}
+Judgement form: $\types{\Gamma}{e}{\tau}$, evaluation $e \steps e'$.
+
+\subsection{Typing rule example}
+\[
+\inferrule*[Right=App]
+  {\types{\Gamma}{e_1}{\tau_1\!\to\!\tau_2} \quad \types{\Gamma}{e_2}{\tau_1}}
+  {\types{\Gamma}{e_1\,e_2}{\tau_2}}
+\]
+
+\subsection{BNF for a tiny lambda-calculus}
+\begin{grammar}
+<expr> ::= <expr> <expr> \alt "\" <var> "." <expr> \alt <var>
+<var>  ::= "x" \alt "y" \alt "z"
+\end{grammar}
+
+\subsection{A theorem box demo}
+\begin{theoremenv}
+For all $x\in\R$, $x^2 \ge 0$.
+\end{theoremenv}

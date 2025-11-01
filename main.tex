@@ -1,0 +1,29 @@
+% !TeX program = pdflatex
+\documentclass{mobeen-notes}
+\usepackage{syntax}
+\usepackage{mathpartir}
+\usepackage{stmaryrd}
+% \usepackage{minted}
+% \usepackage{listings}
+
+\addbibresource{references.bib}
+\graphicspath{{figures/}}
+
+\newcommand{\sem}[1]{\llbracket #1 \rrbracket}
+\newcommand{\types}[3]{#1 \vdash #2 : #3}
+\newcommand{\steps}{\;\rightarrow\;}
+\newcommand{\bigsteps}{\;\Rightarrow\;}
+
+\title{Programming Languages \& Computation — Notes}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\input{sections/week01/overview}
+\input{sections/week01/operational-semantics}
+
+\printbibliography
+\end{document}
