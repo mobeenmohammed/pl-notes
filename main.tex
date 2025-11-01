@@ -1,8 +1,14 @@
 % !TeX program = pdflatex
-\documentclass{mobeen-notes}
+\documentclass{mobeen-notes} % My own global macros I have set up locally
 \usepackage{syntax}
 \usepackage{mathpartir}
 \usepackage{stmaryrd}
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\usepackage{parskip}
+\hypersetup{hidelinks}
+\makeatletter
+\renewcommand{\@dotsep}{10000} % make leaders effectively disappear
+\makeatother
 % \usepackage{minted}
 % \usepackage{listings}
 
@@ -14,13 +20,15 @@
 \newcommand{\steps}{\;\rightarrow\;}
 \newcommand{\bigsteps}{\;\Rightarrow\;}
 
-\title{Programming Languages \& Computation — Notes}
-\author{Your Name}
-\date{\today}
+\title{Programming Languages \& Computation Notes}
+\author{Mobeen Mohammed}
+\date{01/11/2025}
 
 \begin{document}
 \maketitle
 \tableofcontents
+
+\newpage
 
 \input{sections/week01/overview}
 \input{sections/week01/operational-semantics}

@@ -1,5 +1,5 @@
 % !TeX root = ../../main.tex
-\section{Operational Semantics (Small-step)}
+\section{Some things worth knowing for the Module}
 Judgement form: $\types{\Gamma}{e}{\tau}$, evaluation $e \steps e'$.
 
 \subsection{Typing rule example}
@@ -11,7 +11,7 @@ Judgement form: $\types{\Gamma}{e}{\tau}$, evaluation $e \steps e'$.
 
 \subsection{BNF for a tiny lambda-calculus}
 \begin{grammar}
-<expr> ::= <expr> <expr> \alt "\" <var> "." <expr> \alt <var>
+<expr> ::= <expr> <expr> \alt "\textbackslash" <var> "." <expr> \alt <var>
 <var>  ::= "x" \alt "y" \alt "z"
 \end{grammar}
 
