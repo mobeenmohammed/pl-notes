@@ -55,11 +55,38 @@ A good example can be the set of \textbf{binary numbers}, $\mathbb{B} = \{0, 1\}
 A \textbf{relation} from $A$ to $B$ is some subset of the cartesian product of the cartesian product of $A$ and $B$
 \\ Now that I think about this, you're probably gonna see a lot of green during this.
 
+\subsection{Functions}
 
+\begin{definitionenv}[Function]
+.   We define a function $f : A \rightarrow B$ as $f \subseteq A \times B$ with two properties
+\begin{itemize}
+    \item $\forall \text{ } a \in A, \exists \text{ } b \in B \text{ s.t } (a,b) \in f$
+    \item $\forall \text{ } a \in A \text{ } \exists! \text{ } b \in B \text{ s.t } (a,b) \in f$
+\end{itemize}
+\end{definitionenv}
 
+What the above is essentially saying is that for for every input there is exactly one output.
 
+\begin{definitionenv}[Partial Functions]
+.    A \textbf{partial function} $f : A \rightarrow B$ is one that is just single valued but may not be defined everywhere
+\end{definitionenv}
 
+If a partial function isnt defined at a particular input we write $f(x) \uparrow$ \\
+If a partial function is defined at a particular input we write $f(x) \simeq y$
 
+\begin{remarkenv}
+. There's what is called the \textbf{Kleene equality} which is denoted $e \simeq e'$ and it this means \textbf{one} of two things.
+\begin{itemize}[nosep]
+    \item Both expressions $e$ and $e'$ are undefined 
+    \item Both $e$ and $e'$ are defined and the value is equal
+\end{itemize}
+\end{remarkenv}
 
+\begin{exampleenv}
+.   We can say $\frac{1}{0} \simeq \frac{2}{0}$ because both values are undefined
+    We can't say $\frac{1}{2} \simeq \frac{2}{2}$ because both expressions are defined but they aren't equal
+\end{exampleenv}
+
+I know you must have gotten bored of seeing the colour green, I know I certainly did so I added this.
 
 
